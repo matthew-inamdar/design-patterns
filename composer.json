@@ -1,0 +1,23 @@
+{
+    "name": "matthew-inamdar/php-design-patterns",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Matthew Inamdar",
+            "email": "matthew@inamdar.co.uk"
+        }
+    ],
+    "require": {
+        "php": "^7.3"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    }
+}
