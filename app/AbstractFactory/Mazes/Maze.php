@@ -26,7 +26,7 @@ class Maze implements MapSite
 
     public function addRoom(Room $room): void
     {
-        //
+        $this->rooms[] = $room;
     }
 
     public function roomNumber(int $roomNumber): ?Room
