@@ -26,8 +26,8 @@ class MazeFactory
         return new Room($roomNumber);
     }
 
-    public function makeDoor(Room $room1, Room $room2): Door
+    public function makeDoor(Room $roomFrom, Room $roomTo): Door
     {
-        return new Door($room1, $room2);
+        return new Door($roomFrom, $roomTo);
     }
 }

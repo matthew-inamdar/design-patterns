@@ -2,20 +2,20 @@
 
 declare(strict_types=1);
 
-namespace App\AbstractFactory\Doors;
+namespace App\Builder\Doors;
 
-use App\AbstractFactory\MapSite;
-use App\AbstractFactory\Rooms\Room;
+use App\Builder\MapSite;
+use App\Builder\Rooms\Room;
 
 class Door implements MapSite
 {
     /**
-     * @var \App\AbstractFactory\Rooms\Room
+     * @var \App\Builder\Rooms\Room
      */
     protected $roomFrom;
 
     /**
-     * @var \App\AbstractFactory\Rooms\Room
+     * @var \App\Builder\Rooms\Room
      */
     protected $roomTo;
 
