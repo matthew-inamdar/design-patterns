@@ -38,6 +38,8 @@ class Door implements MapSite
 
     public function otherSideFrom(Room $room): Room
     {
-        return $room === $this->room1 ? $this->room2 : $this->room1;
+        return $room->roomNumber === $this->room1->roomNumber
+            ? $this->room2
+            : $this->room1;
     }
 }
